@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #FFF;
+    --grey: #F4F4F4;
+    --blue-bg: #6943FF;
+    --blue-font: #5A537B;
+    --gray-font: #353535;
+    --black-font: #3D3D3D;
+    --font-family: 'Inter', sans-serif, Arial, Helvetica;
+    --border-radius: 5px;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: var(--grey);
+    margin: 1.75rem auto;
+    font-family: var(--font-family);
+    max-width: 34rem;
+    padding-bottom: 1.5rem;
+}
+
+header {
+    background-color: var(--blue-bg);
+    color: var(--white);
+    height: 17em;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 1em;
+    font-weight: bold;
+}
+
+/* REMOVE INPUT SPIN BUTTONS */
+    /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+    /* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#input-el {
+    border: 2px solid #5A537B;
+    border-color: #B295FF;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-size: 3.75em;
+    width: 25%;
+    font-weight: bold;
+    background: var(--blue-bg);
+    color: var(--white);
+    line-height: 42%;
+}
+
+#btn-el {
+    width: 25%;
+    height: 2.6em;
+    display: block;
+    margin: 1em auto;
+    background: var(--white);
+    color: var(--black-font);
+    font-family: var(--font-family);
+    font-weight: bold;
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05)
+}
+
+.result-wrapper {
+    margin: 25px 25px;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    height: 6.75em;
+    text-align: center;
+}
+
+.result-wrapper h4 {
+    color: var(--blue-font);
+    font-size: 1.25em;
+    margin: auto;
+    padding-top: 1.75em;
+}
+
+.result-wrapper p {
+    font-size: 0.875em;
+    color: var(--black-font);
+}
+
+.togglemode {
+    padding-top: 0.2rem;
+    position: absolute;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    background-color: var(--white);
+    width: 3.125rem;
+    height: 1.7rem;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-moon {
+    color: #000;
+}
+
+.fa-sun {
+    color: #000;
+}
+
+.checkbox-label .ball {
+    background-color: var(--blue-bg);
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+    transform: translate(24px);
+}
+
+body.dark {
+    background-color: #0f0f0f;
+}
+
+body.dark main {
+    background-color: #1F2937;
+}
+
+body.dark .result-wrapper {
+    background-color: #273549;
+}
+
+body.dark h4 {
+    color: #CCC1FF;
+}
+
+body.dark p {
+    color: #FFF;
+}
