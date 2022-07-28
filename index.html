@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/7c1118da26.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <header id="header">
+                <div class="togglemode">
+                    <input type="checkbox" class="checkbox" id="checkbox" />
+                    <label for="checkbox" class="checkbox-label">
+                        <i class="fa-solid fa-moon"></i>
+                        <i class="fa-solid fa-sun"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+                
+                <h1>Metric/Imperial Unit Conversion</h1>
+                <input type="number" id="input-el">
+                <button type="button" id="btn-el">Convert</button>
+            </header>
+            <section>
+                <div class="result-wrapper" id="length-div">
+                    <h4 class="result-heading">Length (Meter/Feet)</h4>
+                    <div class="result" id="length-el"></div>
+                </div>
+                <div class="result-wrapper" id="volume-div">
+                    <h4 class="result-heading">Volume (Liters/Gallons)</h4>
+                    <div class="result" id="volume-el"></div>
+                </div>
+                <div class="result-wrapper" id="mass-div">
+                    <h4 class="result-heading">Mass (Kilograms/Pounds)</h4>
+                    <div class="result" id="mass-el"></div>
+                </div> 
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
