@@ -46,7 +46,7 @@ btnEl.addEventListener("click", function() {
             </p>
         `
     } else {
-        massEl.innerHTML = ``
+        alert("Please insert a number!")
     }
 })
 
