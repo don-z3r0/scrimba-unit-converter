@@ -34,7 +34,7 @@ btnEl.addEventListener("click", function() {
             </p>
         `
     } else {
-        massEl.innerHTML = ``
+        volumeEl.innerHTML = ``
     }
     
     let valuePounds = conversionOne(kilogram)
