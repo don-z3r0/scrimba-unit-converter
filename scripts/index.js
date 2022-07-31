@@ -34,7 +34,7 @@ btnEl.addEventListener("click", function() {
             </p>
         `
     } else {
-        lengthEl.innerHTML = ``
+        massEl.innerHTML = ``
     }
     
     let valuePounds = conversionOne(kilogram)
@@ -46,7 +46,7 @@ btnEl.addEventListener("click", function() {
             </p>
         `
     } else {
-        alert("Please insert a number!")
+        massEl.innerHTML = ``
     }
 })
 
