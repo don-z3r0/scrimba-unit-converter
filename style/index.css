@@ -17,6 +17,7 @@
 
 body {
     margin: 0;
+    padding-inline: 0.8rem;
 }
 
 main {
