@@ -1,3 +1,14 @@
-# Scrimba Unit Converter Solo Project
+# Metric/Imperial Unit Converter
 
-<img src="Screenshot (20).png" alt="screenshot of project requirements">
+## Screenshot
+
+![screenshot](images/uCon-Light.jpg "Light mode")
+
+## Built with
+- Semantic HTML5
+- Custom CSS properties
+- CSS Flexbox
+
+## Live URL Link: [Metric/Imperial Unit Converter](https://jumaharun.github.io/scrimba-unit-converter/)
+
+### Built by: [Juma Harun](https://jumaharun.github.io/jumaHarunPersonalPortfolio/)
